@@ -1,0 +1,30 @@
+ <div class="calculator">
+
+    <input type="text" class="calculator-screen" [value]="srv.inputView" disabled />
+
+    <div class="calculator-keys">
+
+        <app-button [name]="'+'" class="operator"></app-button>
+        <app-button [name]="'-'" class="operator"></app-button>
+        <app-button [name]="'*'" class="operator"></app-button>
+        <app-button [name]="'/'" class="operator"></app-button>
+
+        <app-button [name]="'7'"></app-button>
+        <app-button [name]="'8'"></app-button>
+        <app-button [name]="'9'"></app-button>
+
+        <app-button [name]="'4'"></app-button>
+        <app-button [name]="'5'"></app-button>
+        <app-button [name]="'6'"></app-button>
+
+        <app-button [name]="'1'"></app-button>
+        <app-button [name]="'2'"></app-button>
+        <app-button [name]="'3'"></app-button>
+
+        <app-button [name]="'0'"></app-button>
+        <app-button [name]="'.'" class="decimal"></app-button>
+        <app-button [name]="'AC'" class="all-clear" (click)="clear()"></app-button>
+        <button [name]="'='" (click)="cal()" class="equal-sign">=</button>
+
+    </div>
+</div>
